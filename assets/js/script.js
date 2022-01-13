@@ -30,6 +30,8 @@ var showTopThree = function() {
                         topCryptoCard.appendChild(topCryptoChange);
             
                     topCryptosEl.appendChild(topCryptoCard);
+
+                    console.log("Top 3 Cryptos loaded");
                 }
             }) 
         } else {
@@ -60,4 +62,4 @@ var submitHandler = function(event) {
 
 }
 
-topCryptosEl.addEventListener("load", showTopThree());
+topCryptosEl.addEventListener("click", showTopThree());
